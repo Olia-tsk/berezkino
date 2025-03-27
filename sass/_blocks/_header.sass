@@ -1,0 +1,62 @@
+.header
+
+.header-top
+  padding: 8px 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+  column-gap: 50px
+  &__contacts
+    display: flex
+    align-items: center
+    column-gap: 25px
+    & > p,
+    & > a
+      display: flex
+      align-items: center
+      column-gap: 4px
+    & .svg-icon
+      width: 18px
+      height: 18px
+  &__announce
+    text-transform: uppercase
+  &__buttons
+    display: flex
+    align-items: center
+    column-gap: 10px
+
+.header-main
+  padding-top: 16px
+  padding-bottom: 24px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__menu
+    display: flex
+    align-items: center
+    column-gap: 40px
+    & ul
+      position: absolute
+      padding: 24px
+      display: none
+      flex-direction: column
+      row-gap: 20px
+      left: 0
+      z-index: 999
+  &__menu-item
+    position: relative
+    &:hover
+      & > ul
+        display: flex
+  &__menu-link
+    display: flex
+    align-items: center
+    column-gap: 10px
+    & > svg
+      width: 11px
+      height: 7px
+
+  &__cart
+    display: flex
+    align-items: center
+    column-gap: 12px
