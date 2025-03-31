@@ -1,12 +1,32 @@
 .advantages
   &__wrapper
     display: grid
-    grid-template-columns: 40% 40%
+    // grid-template-columns: 40% 40%
+    grid-template-columns: repeat(2, minmax(523px, 350px))
     grid-template-rows: repeat(3, 1fr)
     grid-auto-flow: column
     justify-content: space-between
     row-gap: 16px
+    background-image: url(/images/advantages-bg.png)
+    background-repeat: no-repeat
+    background-position: center bottom
   &__item
     display: flex
     align-items: center
     column-gap: 24px
+    padding: 36px
+    background: #FFFFFF
+    border: 1px solid #ECECEC
+    border-radius: 28px
+    box-shadow: $box-shadow-xsmall
+    & > span
+      font-family: 'Comfortaa'
+      font-weight: 700
+      font-size: 36px
+      line-height: 50px
+      text-transform: uppercase
+      color: #197606
+    & > p
+      font-size: 20px
+      line-height: 30px
+      color: #1E1E1E
