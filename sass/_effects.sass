@@ -62,10 +62,14 @@
   transition: background-color 0.3s
   & > p
     transition: color 0.3s
+  & > img
+    transition: transform 0.5s
   &:hover
     background-color: #DCF0D3
     & > p
       color: #197606
+    & > img
+      transform: scale(1.2)
 
 @media (max-width: 735px)
   .button
@@ -132,7 +136,11 @@
     transition: none
     & > p
       transition: none
+    & > img
+      transition: none
     &:hover
       background-color: #FFFFFF
       & > p
         color: #353535
+      & > img
+        transform: none
