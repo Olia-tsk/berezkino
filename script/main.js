@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   Splide.defaults = {
     type: "loop",
   };
-  if (document.getElementById("#reviewsSlider")) {
+  if (document.getElementById("reviewsSlider")) {
     var reviewsSlider = new Splide("#reviewsSlider", {
       pagination: false,
       perPage: 3,
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     reviewsSlider.mount();
   }
 
-  if (document.getElementById("#articlesSlider")) {
+  if (document.getElementById("articlesSlider")) {
     var articlesSlider = new Splide("#articlesSlider", {
       pagination: false,
       perPage: 4,
