@@ -1,0 +1,138 @@
+.button
+  transition: background 0.3s, color 0.3s
+  &:hover
+    &.button--fill
+      color: #FFFFFF
+      background: $base-color-darker
+    &.button--outline
+      color: #FFFFFF
+      background: #197606
+      border: 2px solid #197606
+
+.header-top
+  &__contacts
+    & > a
+      transition: color 0.3s
+      & .svg-icon
+        transition: fill 0.3s
+      &:hover
+        color: $base-color
+        & .svg-icon
+          fill: $base-color
+
+.header-main
+  &__menu-link
+    transition: color 0.3s
+    & > svg
+      transition: fill 0.3s
+    &:hover
+      color: $base-color
+      & > svg
+        fill: $base-color
+  &__cart
+    transition: color 0.3s
+    &:hover
+      color: $base-color
+  &__menu
+    & ul
+      & > li
+        & > a
+          transition: color 0.3s
+        &:hover
+          & > a
+            color: $base-color
+
+.social-button
+  transition: color 0.3s, background-color 0.3s
+  & > svg
+    transition: fill 0.3s
+  &:hover
+    &.social-button--green
+      color: #FFFFFF
+      background-color: $base-color
+      & > svg
+        fill: #FFFFFF
+    &.social-button--blue
+      color: #FFFFFF
+      background-color: #34A8DB
+      & > svg
+        fill: #FFFFFF
+
+.categories__item
+  transition: background-color 0.3s
+  & > p
+    transition: color 0.3s
+  &:hover
+    background-color: #DCF0D3
+    & > p
+      color: #197606
+
+@media (max-width: 735px)
+  .button
+    transition: none
+    &:hover
+      &.button--fill
+        color: #FFFFFF
+        background: $base-color
+      &.button--outline
+        color: $base-color-darker
+        background: none
+        border: 2px solid $base-color-darker
+
+  .header-top
+    &__contacts
+      & > a
+        transition: none
+        & .svg-icon
+          transition: none
+        &:hover
+          color: #949494
+          & .svg-icon
+            fill: #949494
+
+  .header-main
+    &__menu-link
+      transition: none
+      & > svg
+        transition: none
+      &:hover
+        color: #1E1E1E
+        & > svg
+          fill: #1E1E1E
+    &__cart
+      transition: none
+      &:hover
+        color: #1E1E1E
+    &__menu
+      & ul
+        & > li
+          & > a
+            transition: color 0.3s
+          &:hover
+            & > a
+              color: #353535
+
+  .social-button
+    transition: none
+    & > svg
+      transition: none
+    &:hover
+      &.social-button--green
+        color: $base-color
+        background-color: unset
+        & > svg
+          fill: $base-color
+      &.social-button--blue
+        color: #34A8DB
+        background-color: unset
+        & > svg
+          fill: #34A8DB
+
+  .categories__item
+    transition: none
+    & > p
+      transition: none
+    &:hover
+      background-color: #FFFFFF
+      & > p
+        color: #353535
