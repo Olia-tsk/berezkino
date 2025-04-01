@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   Splide.defaults = {
     type: "loop",
+    padding: { left: 10, right: 10 },
   };
   if (document.getElementById("reviewsSlider")) {
     var reviewsSlider = new Splide("#reviewsSlider", {
