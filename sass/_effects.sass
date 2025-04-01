@@ -71,6 +71,37 @@
     & > img
       transform: scale(1.2)
 
+.articles
+  &__slider-slide
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s
+    & > a
+      & .articles__slider-slide-img
+        & > img
+          transition: transform 0.5s
+      & > h4
+        transition: color 0.3s
+      & > p
+        transition: color 0.3s
+    &:hover
+      background-color: #DCF0D3
+      border-color: rgba(25, 118, 6, 0.4)
+      box-shadow: $box-shadow-small
+      & > a
+        & .articles__slider-slide-img
+          & > img
+            transform: scale(1.1)
+        & > h4
+          color: $base-color
+        & > p
+          color: $base-color
+
+.splide
+  &__arrow
+    transition: background-color 0.3s
+    &:hover:not(:disabled)
+      opacity: 1
+      background-color: $base-color-darker
+
 @media (max-width: 735px)
   .button
     transition: none
@@ -144,3 +175,33 @@
         color: #353535
       & > img
         transform: none
+
+  .articles
+    &__slider-slide
+      transition: none
+      & > a
+        & .articles__slider-slide-img
+          & > img
+            transition: none
+        & > h4
+          transition: none
+        & > p
+          transition: none
+      &:hover
+        background-color: #FFFFFF
+        border-color: #C8C8C8
+        box-shadow: $box-shadow-xsmall
+        & > a
+          & .articles__slider-slide-img
+            & > img
+              transform: none
+          & > h4
+            color: #1E1E1E
+          & > p
+            color: #1E1E1E
+
+  .splide
+    &__arrow
+      transition: none
+      &:hover:not(:disabled)
+        background-color: $base-color
