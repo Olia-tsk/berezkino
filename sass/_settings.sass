@@ -42,9 +42,12 @@ section
   fill: #000000
 
 .button
+  width: 100%
+  max-width: 464px
   padding: 12px 36px
   display: flex
   align-items: center
+  justify-content: center
   font-weight: 600
   text-align: center
   border-radius: 12px
@@ -101,3 +104,16 @@ section
 .page-title
   margin-bottom: 80px
   text-align: center
+
+.splide
+  &__track
+    padding-bottom: 10px
+  &__arrow
+    width: 56px
+    height: 56px
+    background-color: $base-color
+    opacity: 1
+    &--prev
+      left: 0
+    &--next
+      right: 0
