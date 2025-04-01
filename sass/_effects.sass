@@ -69,7 +69,7 @@
     & > p
       color: #197606
     & > img
-      transform: scale(1.2)
+      transform: scale(1.1)
 
 .articles
   &__slider-slide
@@ -101,6 +101,24 @@
     &:hover:not(:disabled)
       opacity: 1
       background-color: $base-color-darker
+
+.contacts
+  &__data
+    & a[href*="tel:"]
+      transition: color 0.3s
+      &:hover
+        color: $base-color
+    & a[href*="mailto:"]
+      transition: color 0.3s
+      &:hover
+        color: $base-color
+
+.footer-bottom
+  &__links
+    & > a
+      transition: color 0.3s
+      &:hover
+        color: $base-color
 
 @media (max-width: 735px)
   .button
@@ -205,3 +223,21 @@
       transition: none
       &:hover:not(:disabled)
         background-color: $base-color
+
+  .contacts
+    &__data
+      & a[href*="tel:"]
+        transition: color none
+        &:hover
+          color: #1E1E1E
+      & a[href*="mailto:"]
+        transition: color none
+        &:hover
+          color: #0E4602
+
+  .footer-bottom
+    &__links
+      & > a
+        transition: none
+        &:hover
+          color: #636363
