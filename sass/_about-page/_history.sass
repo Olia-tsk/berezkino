@@ -1,5 +1,8 @@
 .history
+  padding-top: 80px
   padding-bottom: 95px
+  &__header
+    margin-bottom: 80px
   &__content
     display: flex
     column-gap: 16px
@@ -22,7 +25,14 @@
   &__content-text
     display: flex
     flex-direction: column
-    row-gap: 15px
+    row-gap: 25px
     padding: 32px
     width: 45%
     flex-grow: 1
+    & p
+      font-size: 20px
+      line-height: 28px
+      color: #353535
+      & > b
+        font: inherit
+        font-weight: 700
