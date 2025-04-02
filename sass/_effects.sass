@@ -120,6 +120,29 @@
       &:hover
         color: $base-color
 
+.sidebar
+  &__menu
+    & > li > a
+      transition: background-color 0.3s, color 0.3s
+      &:hover
+        background-color: rgba(25, 118, 6, 0.1)
+        color: #0E4602
+
+.price
+  &__item
+    transition: background-color 0.3s, box-shadow 0.3s
+    & p
+      transition: color 0.3s
+    & span
+      transition: color 0.3s
+    &:hover
+      background-color: #DCF0D3
+      box-shadow: $box-shadow-small
+      & p
+        color: #197606
+      & span
+        color: #197606
+
 @media (max-width: 735px)
   .button
     transition: none
@@ -241,3 +264,26 @@
         transition: none
         &:hover
           color: #636363
+
+  .sidebar
+    &__menu
+      & > li > a
+        transition: none
+        &:hover
+          background-color: unset
+          color: #434343
+
+  .price
+    &__item
+      transition: none
+      & p
+        transition: none
+      & span
+        transition: none
+      &:hover
+        background-color: #FFFFFF
+        box-shadow: $box-shadow-xsmall
+        & p
+          color: #1E1E1E
+        & span
+          color: #1E1E1E
