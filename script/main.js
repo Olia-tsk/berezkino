@@ -8,6 +8,14 @@ document.addEventListener("DOMContentLoaded", function () {
       pagination: false,
       perPage: 3,
       gap: "24px",
+      breakpoints: {
+        1250: {
+          perPage: 2,
+        },
+        876: {
+          perPage: 1,
+        },
+      },
     });
     reviewsSlider.mount();
   }
