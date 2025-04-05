@@ -66,6 +66,8 @@ main
   font-weight: 600
   text-align: center
   border-radius: 12px
+  border: none
+  cursor: pointer
   &--fill
     color: #FFFFFF
     background: $base-color
@@ -162,7 +164,7 @@ main
     line-height: 19px
     color: #1E1E1E
     &--active
-      color: #197606
+      color: $base-color
 
 .sidebar
   padding: 24px
@@ -189,3 +191,66 @@ main
       line-height: 19px
       color: #434343
       border-radius: 8px
+
+.useful-links
+  padding: 0
+  padding-bottom: 45px
+  &__list
+    display: flex
+    column-gap: 12px
+  &__link
+    padding: 16px
+    display: flex
+    align-items: center
+    column-gap: 24px
+    flex-grow: 1
+    background-color: #FFFFFF
+    border: 1px solid #ECECEC
+    box-shadow: $box-shadow-xsmall
+    border-radius: 16px
+    & > svg
+      width: 48px
+      height: 48px
+  &__content
+    & > p
+      font-size: 18px
+      line-height: 27px
+      color: #1E1E1E
+    & > span
+      font-weight: 600
+      font-size: 16px
+      line-height: 19px
+      color: $base-color
+
+.form
+  & input
+    padding: 4px 8px
+    background: #FFFFFF
+    border: 1px solid #ECECEC
+    border-radius: 8px
+    &[type="number"]
+      width: 80px
+      text-align: center
+
+  & input[type="number"]::-webkit-outer-spin-button,
+  & input[type="number"]::-webkit-inner-spin-button
+    display: none
+
+.form-group
+  display: flex
+  column-gap: 15px
+  align-items: stretch
+  &__btn
+    width: 50px
+    height: 50px
+    border: 2px solid #197606
+    border-radius: 12px
+    background: unset
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    font-weight: 600
+    font-size: 16px
+    line-height: 19px
+    color: #197606
