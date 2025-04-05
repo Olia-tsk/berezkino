@@ -139,9 +139,27 @@
       background-color: #DCF0D3
       box-shadow: $box-shadow-small
       & p
-        color: #197606
+        color: $base-color
       & span
-        color: #197606
+        color: $base-color
+
+.useful-links
+  &__link
+    transition: background-color 0.3s, box-shadow 0.3s
+    & p
+      transition: color 0.3s
+    &:hover
+      background-color: #DCF0D3
+      box-shadow: $box-shadow-small
+      & p
+        color: $base-color
+
+.form-group
+  &__btn
+    transition: background-color 0.3s, color 0.3s
+    &:hover
+      background-color: $base-color
+      color: #FFFFFF
 
 @media (max-width: 735px)
   .button
@@ -287,3 +305,21 @@
           color: #1E1E1E
         & span
           color: #1E1E1E
+
+  .useful-links
+    &__link
+      transition: none
+      & p
+        transition: none
+      &:hover
+        background-color: #FFFFFF
+        box-shadow: $box-shadow-xsmall
+        & p
+          color: #1E1E1E
+
+  .form-group
+    &__btn
+      transition: none
+      &:hover
+        background-color: unset
+        color: $base-color
