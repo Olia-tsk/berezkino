@@ -4,12 +4,21 @@
   background: #FFFFFF
   box-shadow: $box-shadow-xsmall
   z-index: 200
+  &__announce
+    font-weight: 700
+    line-height: 19px
+    color: $base-color
+    text-transform: uppercase
+    text-align: center
+    justify-content: center
+
 .header-top
   padding: 8px 0
-  display: flex
-  align-items: center
-  justify-content: space-between
-  column-gap: 50px
+  & .container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    column-gap: 40px
   &__contacts
     display: flex
     align-items: center
@@ -26,11 +35,6 @@
       width: 18px
       height: 18px
       fill: #949494
-  &__announce
-    font-weight: 700
-    line-height: 19px
-    color: $base-color
-    text-transform: uppercase
 
   &__buttons
     display: flex
@@ -40,9 +44,12 @@
 .header-main
   padding-top: 16px
   padding-bottom: 24px
-  display: flex
-  align-items: center
-  justify-content: space-between
+  background-color: #FFFFFF
+  & .container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    column-gap: 35px
   &__menu
     display: flex
     align-items: center
@@ -72,6 +79,7 @@
   &__menu-link
     display: flex
     align-items: center
+    justify-content: center
     column-gap: 10px
     font-weight: 500
     font-size: 18px
@@ -81,6 +89,12 @@
       width: 11px
       height: 7px
       fill: #1E1E1E
+  &__announce
+    display: none
+
+  &__buttons
+    display: flex
+    column-gap: 40px
 
   &__cart
     display: flex
