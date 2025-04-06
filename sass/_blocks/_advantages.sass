@@ -1,15 +1,19 @@
 .advantages
   &__wrapper
+    position: relative
     display: grid
-    // grid-template-columns: 40% 40%
-    grid-template-columns: repeat(2, minmax(523px, 350px))
+    grid-template-columns: repeat(2, 35%)
     grid-template-rows: repeat(3, 1fr)
     grid-auto-flow: column
     justify-content: space-between
     row-gap: 16px
-    background-image: url(/images/advantages-bg.png)
-    background-repeat: no-repeat
-    background-position: center bottom
+  &__bg
+    position: absolute
+    bottom: 0
+    right: 50%
+    transform: translateX(50%)
+    z-index: -1
+    width: 522px
   &__item
     display: flex
     align-items: center
