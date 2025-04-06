@@ -12,6 +12,11 @@
     &__subtitle
       font-size: calc(16px + (24 - 16) * ((100vw - 375px) / (1440 - 375)))
       line-height: calc(19px + (29 - 19) * ((100vw - 375px) / (1440 - 375)))
+  .page-header
+    margin-bottom: calc(40px + (80 - 25) * ((100vw - 375px) / (1440 - 375)))
+    &__title
+      font-size: calc(32px + (40 - 32) * ((100vw - 375px) / (1440 - 375)))
+      line-height: calc(38px + (48 - 38) * ((100vw - 375px) / (1440 - 375)))
   .reviews
     &__slider-slide
       & > p
@@ -30,6 +35,10 @@
     &__map
       width: 55%
       flex-grow: 1
+  .price
+    &__item-title
+      font-size: calc(16px + (24 - 16) * ((100vw - 375px) / (1440 - 375)))
+      line-height: calc(22px + (34 - 22) * ((100vw - 375px) / (1440 - 375)))
 
 @media (max-width: 1330px)
   .header
@@ -120,6 +129,9 @@
       & a[href*="tel:"]
         font-size: calc(22px + (40 - 22) * ((100vw - 375px) / (1250 - 375)))
         line-height: calc(22px + (48 - 22) * ((100vw - 375px) / (1250 - 375)))
+  .price
+    &__item
+      padding: calc(16px + (32 - 16) * ((100vw - 375px) / (1250 - 375)))
 
 // @media (max-width: 1100px)
 
@@ -136,6 +148,9 @@
 @media (max-width: 992px)
   .header
     top: -90px
+  .price
+    &__item
+      flex-direction: column
 
 @media (max-width: 876px)
   .header
@@ -212,6 +227,11 @@
     &__links
       flex-direction: column
       align-items: flex-end
+  .price
+    &__wrapper
+      grid-template-columns: 1fr
+    &__item
+      flex-direction: row
 
 @media (max-width: 576px)
   .mobile-menu
@@ -251,6 +271,9 @@
     row-gap: 10px
     &__links
       align-items: flex-start
+  .price
+    &__item
+      flex-direction: column
 
 @media (max-width: 375px)
   .logo-link
