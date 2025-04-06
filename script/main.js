@@ -40,3 +40,14 @@ document.addEventListener("DOMContentLoaded", function () {
     articlesSlider.mount();
   }
 });
+
+const section = document.querySelector("section");
+const body = document.querySelector("body");
+const burger = document.getElementById("burgerBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+burger.addEventListener("click", function () {
+  mobileMenu.classList.toggle("open");
+  burger.classList.toggle("animate");
+  body.classList.toggle("overflow-hidden");
+});
