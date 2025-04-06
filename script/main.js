@@ -25,6 +25,17 @@ document.addEventListener("DOMContentLoaded", function () {
       pagination: false,
       perPage: 4,
       gap: "16px",
+      breakpoints: {
+        1690: {
+          perPage: 3,
+        },
+        1250: {
+          perPage: 2,
+        },
+        735: {
+          perPage: 1,
+        },
+      },
     });
     articlesSlider.mount();
   }
