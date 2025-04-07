@@ -39,6 +39,11 @@
     &__item-title
       font-size: calc(16px + (24 - 16) * ((100vw - 375px) / (1440 - 375)))
       line-height: calc(22px + (34 - 22) * ((100vw - 375px) / (1440 - 375)))
+    &__item-col
+      & > span
+        font-size: calc(14px + (18 - 14) * ((100vw - 375px) / (1440 - 375)))
+    &__item-download
+      font-size: calc(14px + (16 - 14) * ((100vw - 375px) / (1440 - 375)))
 
 @media (max-width: 1330px)
   .header
@@ -132,6 +137,10 @@
   .price
     &__item
       padding: calc(16px + (32 - 16) * ((100vw - 375px) / (1250 - 375)))
+  .history
+    &__content-text > p
+      font-size: calc(16px + (20 - 16) * ((100vw - 375px) / (1250 - 375)))
+      line-height: calc(26px + (28 - 26) * ((100vw - 375px) / (1250 - 375)))
 
 // @media (max-width: 1100px)
 
@@ -151,6 +160,25 @@
   .price
     &__item
       flex-direction: column
+  .history
+    &__content
+      flex-direction: column
+      row-gap: calc(45px + (64 - 45) * ((100vw - 375px) / (992 - 375)))
+      &:not(:last-child)
+        margin-bottom: calc(45px + (64 - 45) * ((100vw - 375px) / (992 - 375)))
+      & > img
+        height: calc(250px + (300 - 250) * ((100vw - 375px) / (992 - 375)))
+      &--gallery
+        flex-direction: row
+      &--invert
+        flex-direction: column
+    &__content-text
+      width: 100%
+      padding: 0 32px
+    &__content-images
+      width: 100%
+      & > img
+        height: calc(250px + (350 - 250) * ((100vw - 375px) / (992 - 375)))
 
 @media (max-width: 876px)
   .header
@@ -274,6 +302,11 @@
   .price
     &__item
       flex-direction: column
+  .history
+    &__content-text
+      padding: 0
+    &__content-images
+      flex-wrap: wrap
 
 @media (max-width: 375px)
   .logo-link
