@@ -5,25 +5,25 @@
   &__content
     display: flex
     column-gap: 16px
-    align-items: center
-    &:not(:last-child)
-      margin-bottom: 64px
-    & img
-      height: 550px
-      width: 45%
+    align-items: stretch
+    & > img
+      height: 300px
+      width: 19%
+      min-width: 320px
       flex-grow: 1
       object-fit: cover
       border-radius: 24px
       overflow: hidden
+    &:not(:last-child)
+      margin-bottom: 64px
     &--gallery
-      & > img
-        height: 300px
-        width: 19%
+      overflow-y: auto
     &--invert
       flex-direction: row-reverse
   &__content-text
     display: flex
     flex-direction: column
+    justify-content: center
     row-gap: 25px
     padding: 32px
     width: 45%
@@ -35,3 +35,15 @@
       & > b
         font: inherit
         font-weight: 700
+  &__content-images
+    width: 45%
+    flex-grow: 1
+    display: flex
+    column-gap: 16px
+    row-gap: 16px
+    overflow: hidden
+    & > img
+      width: 100%
+      border-radius: 24px
+      overflow: hidden
+      object-fit: cover
