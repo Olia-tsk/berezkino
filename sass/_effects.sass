@@ -31,8 +31,12 @@
         fill: $base-color
   &__cart
     transition: color 0.3s
+    & > svg
+      transition: fill 0.3s
     &:hover
       color: $base-color
+      & > svg
+        fill: $base-color
   &__menu
     & ul
       & > li
@@ -67,9 +71,22 @@
   &:hover
     background-color: #DCF0D3
     & > p
-      color: #197606
+      color: $base-color
     & > img
       transform: scale(1.1)
+
+.subcategories__item
+  transition: background-color 0.3s
+  &  img
+    transition: transform 0.5s
+  & span
+    transition: color 0.3s
+  &:hover
+    background-color: #DCF0D3
+    &  img
+      transform: scale(1.1)
+    & span
+      color: $base-color
 
 .articles-list
   &__item
@@ -161,6 +178,13 @@
       background-color: $base-color
       color: #FFFFFF
 
+.delivery
+  &__content
+    & a
+      transition: color 0.3s
+      &:hover
+        color: $base-color-darker
+
 @media (max-width: 735px)
   .button
     transition: none
@@ -195,8 +219,12 @@
           fill: #1E1E1E
     &__cart
       transition: none
+      & > svg
+        transition: none
       &:hover
         color: #1E1E1E
+        & > svg
+          fill: #1E1E1E
     &__menu
       & ul
         & > li
@@ -234,6 +262,19 @@
         color: #353535
       & > img
         transform: none
+
+  .subcategories__item
+    transition: none
+    &  img
+      transition: none
+    & span
+      transition: none
+    &:hover
+      background-color: #FFFFFF
+      &  img
+        transform: none
+      & span
+        color: $base-color-darker
 
   .articles-list
     &__item
@@ -323,3 +364,10 @@
       &:hover
         background-color: unset
         color: $base-color
+
+  .delivery
+    &__content
+      & a
+        transition: none
+        &:hover
+          color: $base-color
