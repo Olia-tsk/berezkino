@@ -15,8 +15,8 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header-top">
+      <div class="header-top">
+        <div class="container">
           <div class="header-top__contacts">
             <a href="https://go.2gis.com/roUHm" target="_blank">
               <svg class="svg-icon">
@@ -38,7 +38,7 @@
             </a>
           </div>
 
-          <p class="header-top__announce">Старт продаж с 1 мая 2025</p>
+          <p class="header__announce header-top__announce">Старт продаж с 1 мая 2025</p>
 
           <div class="header-top__buttons">
             <a class="header-top__button social-button social-button--green" href="tel:+">
@@ -55,10 +55,12 @@
             </a>
           </div>
         </div>
+      </div>
 
-        <div class="header-main">
+      <div class="header-main">
+        <div class="container">
           <a class="header-main__logo-link logo-link" href="/">
-            <img class="header-main__logo logo" src="" alt="Logo: Питомник Берёзкино" />
+            <img class="header-main__logo logo" src="images/logo.svg" alt="Logo: Питомник Берёзкино" />
           </a>
 
           <ul class="header-main__menu">
@@ -94,11 +96,70 @@
             </li>
           </ul>
 
-          <a class="header-main__cart" href="">
+          <p class="header__announce header-main__announce">Старт продаж с 1 мая 2025</p>
+
+          <div class="header-main__buttons">
+            <a class="header-main__cart" href="">
+              <svg class="svg-icon">
+                <use xlink:href="images/sprite.svg#icon-shopping-cart"></use>
+              </svg>
+              Заказ
+            </a>
+
+            <div id="burgerBtn" class="header-main__burger burger-menu">
+              <span class="burger-menu__item burger-menu__item--top"></span>
+              <span class="burger-menu__item burger-menu__item--middle"></span>
+              <span class="burger-menu__item burger-menu__item--bottom"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobileMenu" class="header-main__mobile mobile-menu">
+        <p class="header__announce mobile-menu__announce">Старт продаж с 1 мая 2025</p>
+
+        <ul class="mobile-menu__list">
+          <li><a class="header-main__menu-link" href="/">Главная</a></li>
+          <li><a class="header-main__menu-link" href="/about.html">О Питомнике</a></li>
+          <li><a class="header-main__menu-link" href="/categories.html"> Каталог </a></li>
+          <li><a class="header-main__menu-link" href="/price.html">Цены</a></li>
+          <li><a class="header-main__menu-link" href="/articles.html">Статьи</a></li>
+          <li><a class="header-main__menu-link" href="/delivery.html">Как заказать</a></li>
+        </ul>
+
+        <div class="mobile-menu__contacts">
+          <a href="https://go.2gis.com/roUHm" target="_blank">
             <svg class="svg-icon">
-              <use xlink:href="images/sprite.svg#icon-shopping-cart"></use>
+              <use xlink:href="images/sprite.svg#icon-map"></use>
             </svg>
-            Заказ
+            Деревня Березкино, 1 ст1
+          </a>
+          <p>
+            <svg class="svg-icon">
+              <use xlink:href="images/sprite.svg#icon-clock"></use>
+            </svg>
+            9:00 до 19:00
+          </p>
+          <a href="tel:+79539234214">
+            <svg class="svg-icon">
+              <use xlink:href="images/sprite.svg#icon-call"></use>
+            </svg>
+            8-953-923-42-14
+          </a>
+        </div>
+
+        <div class="mobile-menu__buttons">
+          <a class="header-top__button social-button social-button--green" href="tel:+">
+            <svg class="svg-icon svg-icon--wa">
+              <use xlink:href="images/sprite.svg#icon-wa"></use>
+            </svg>
+            Whats App
+          </a>
+          <a class="header-top__button social-button social-button--blue" href="tel:+">
+            <svg class="svg-icon svg-icon--tg">
+              <use xlink:href="images/sprite.svg#icon-tg"></use>
+            </svg>
+            Telegram
           </a>
         </div>
       </div>
@@ -208,7 +269,7 @@
       <div class="container">
         <div class="footer-main">
           <a class="footer-main__logo-link logo-link" href="/">
-            <img class="footer-main__logo logo" src="" alt="Logo: Питомник Берёзкино" />
+            <img class="footer-main__logo logo" src="images/logo.svg" alt="Logo: Питомник Берёзкино" />
           </a>
         </div>
 
