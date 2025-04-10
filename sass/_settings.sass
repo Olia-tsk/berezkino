@@ -123,10 +123,11 @@ main
 .logo-link
   display: flex
   height: 56px
-  width: 164px
 .logo
   height: inherit
   width: inherit
+  object-position: left
+  object-fit: contain
 
 .svg-icon
   width: 20px
@@ -250,6 +251,7 @@ main
 .sidebar
   padding: 24px
   width: 253px
+  min-width: 220px
   background: #FFFFFF
   border: 1px solid #D9D9D9
   border-radius: 24px
@@ -315,6 +317,7 @@ main
     &[type="number"]
       width: 80px
       text-align: center
+      -moz-appearance: textfield
 
   & input[type="number"]::-webkit-outer-spin-button,
   & input[type="number"]::-webkit-inner-spin-button
@@ -345,7 +348,7 @@ main
   column-gap: 16px
   row-gap: 24px
   display: grid
-  grid-template-columns: repeat(auto-fill, minmax(385px, 1fr))
+  grid-template-columns: repeat(auto-fill, minmax(293px, 1fr))
   &__item
     display: flex
     flex-direction: column
